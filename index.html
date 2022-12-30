@@ -15,11 +15,21 @@
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja Bem-Vindo(a), faça login para acessar sua conta.</p>
+                <p id="bem-vindo">Seja Bem-Vindo(a), faça login para <br> acessar sua conta.</p>
 
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="off">
                     
+                    <label for="iemail"></label>
+                    <input type="email" name="email" id="iemail" placeholder="E-mail" class="dados" required>
+
+                    <label for="isenha"></label>
+                    <input type="password" name="senha" id="isenha" placeholder="Senha" class="dados" required>
+
+                    <input type="submit" value="Enviar" id="ienviar">
+
                 </form>
+
+                <p id="criar-conta">Não tem uma conta? <a href="#">Crie uma.</a></p>
             </div>
 
         </section>

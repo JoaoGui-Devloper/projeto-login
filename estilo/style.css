@@ -11,19 +11,14 @@ Bege: #9a644c
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body, html {
-    background-image: linear-gradient(#bdbec3, #133142);
+    background-image: linear-gradient(#9b9c9f, #0d2735);
     height: 100vh;
     width: 100vw;
-}
-
-main {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
 }
 
 section#login {
@@ -34,14 +29,82 @@ section#login {
 
     background-color: white;
     width: 300px;
-    height: 500px;
+    height: 600px;
     border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(39, 39, 39, 0.401);
 }
 
 div#imagem {
     height: 200px;
-    background-image: url(../imagens/paisagem.png);
-    background-position: bottom center;
-    background-repeat: no-repeat;
+    background: #bdbec3 url(../imagens/paisagem.png) no-repeat bottom center fixed;
     background-size: cover;
+}
+
+div#formulario {
+    margin-top: 15px;
+}
+
+#formulario > h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p#bem-vindo {
+    text-align: center;
+    line-height: 1.4em;
+}
+
+input {
+    display: block;
+}
+
+input.dados {
+    border: none;
+    border-bottom: 1px solid #052231;
+    padding: 10px;
+}
+
+input#iemail {
+    margin: 30px auto 0px
+}
+
+input#isenha {
+    margin: 25px auto 15px;
+}
+
+input#ienviar {
+    margin: 40px auto;
+    padding: 15px;
+    width: 180px;
+    border-radius: 30px;
+    border: 0px;
+    background-image: linear-gradient(-95deg, #e86836, #e25214, #af3f10);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.42);
+}
+
+input#ienviar:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.453);
+}
+
+p#criar-conta {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 230px;
+}
+
+p#criar-conta > a {
+    text-decoration: none;
+    color: #c96235;
+    font-weight: bold;
+}
+
+p#criar-conta > a:hover {
+    text-decoration: underline;
 }
