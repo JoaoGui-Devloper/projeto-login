@@ -36,7 +36,7 @@ section#login {
 
 div#imagem {
     height: 200px;
-    background: #bdbec3 url(../imagens/paisagem.png) no-repeat bottom center fixed;
+    background: transparent url(../imagens/paisagem.png) no-repeat bottom center fixed;
     background-size: cover;
 }
 
@@ -93,10 +93,10 @@ input#ienviar:hover {
 
 p#criar-conta {
     position: absolute;
-    bottom: 7px;
+    width: 226px;
+    bottom: 3px;
     left: 50%;
     transform: translate(-50%);
-    width: 230px;
 }
 
 p#criar-conta > a {

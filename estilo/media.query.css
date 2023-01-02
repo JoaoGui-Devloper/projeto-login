@@ -1,16 +1,61 @@
 @charset "UTF-8"; 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
     section#login {
         width: 90vw;
+        height: 90vh;
     }
 
     section#login > div#imagem {
         float: left;
+        width: 45%;
+        height: 100%;
+    }
+
+    div#imagem {
+        background-image: url(../imagens/paisagem.tablet.jpg);
     }
 
     section#login > div#formulario {
+        position: relative;
         float: right;
+        width: 55%;
+    }
+
+    div#formulario > h1 {
+        margin: 30px;
+        font-size: 2.2em;
+        margin-bottom: 40px;
+    }
+
+    div#formulario > p#bem-vindo {
+        width: 80%;
+        margin: auto;
+        line-height: 1.8em;
+        font-size: 1.3em;
+    }
+
+    div#formulario > form > input.dados {
+        width: 60%;
+        height: 40px;
+    }
+
+    div#formulario > form > input#iemail {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    div#formulario > form > input#isenha {
+        margin-bottom: 65px;
+    }
+
+    div#formulario > form > input#ienviar {
+        margin-bottom: 60px;
+    }
+
+    p#criar-conta {
+        position: relative;
+        bottom: 0px;
     }
 }
