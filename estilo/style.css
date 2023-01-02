@@ -32,15 +32,15 @@ main {
 section#login {
     position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: white;
-    width: 300px;
-    height: 600px;
+    width: 100vw;
+    height: 100vh;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(39, 39, 39, 0.401);
 
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -65,14 +65,18 @@ p#bem-vindo {
     line-height: 1.4em;
 }
 
-input {
+div#formulario > form > input {
     display: block;
 }
 
 input.dados {
     border: none;
-    border-bottom: 1px solid #052231;
+    border-bottom: 1px solid #c96235;
     padding: 10px;
+}
+
+input.dados:focus-within {
+    outline: none;
 }
 
 input#iemail {
@@ -80,11 +84,11 @@ input#iemail {
 }
 
 input#isenha {
-    margin: 25px auto 15px;
+    margin: 25px auto 35px;
 }
 
 input#ienviar {
-    margin: 40px auto;
+    margin: 30px auto;
     padding: 15px;
     width: 180px;
     border-radius: 30px;
@@ -97,22 +101,19 @@ input#ienviar {
 }
 
 input#ienviar:hover {
-    transform: scale(1.08);
     cursor: pointer;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.453);
+    transform: scale(1.08);
 }
 
-p#criar-conta {
-    position: absolute;
-    width: 226px;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%);
+p#criar-conta > a {
+    display: block;
+    text-align: center;
 }
 
 p#criar-conta > a {
     text-decoration: none;
-    color: #c96235;
+    color: #c96135dd;
     font-weight: bold;
 }
 
