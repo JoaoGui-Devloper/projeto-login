@@ -94,7 +94,7 @@ input#ienviar:hover {
 p#criar-conta {
     position: absolute;
     width: 226px;
-    bottom: 3px;
+    bottom: 10px;
     left: 50%;
     transform: translate(-50%);
 }
