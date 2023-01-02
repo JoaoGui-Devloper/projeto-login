@@ -17,6 +17,7 @@ Bege: #9a644c
 
 body {
     background-image: linear-gradient(#9b9c9f, #0d2735);
+    background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
     width: 100vw;
